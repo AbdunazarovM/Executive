@@ -1,6 +1,35 @@
+/*Fonts*/
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    src:
+         url("../fonts/roboto-v27-latin-500.woff2") format("woff2"),
+         url("../fonts/roboto-v27-latin-500.woff") format("woff"); 
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    src:
+         url("../fonts/roboto-v27-latin-700.woff2") format("woff2"),
+         url("../fonts/roboto-v27-latin-700.woff") format("woff"); 
+  }
+
+  @font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    src:
+         url("../fonts/roboto-v27-latin-900.woff2") format("woff2"),
+         url("../fonts/roboto-v27-latin-900.woff") format("woff"); 
+  }
+
 /*CUSTOM PROPERTIES*/
 :root{
-    /*Site Colors*/
+    --text-color: #373737;
+
 
     /*Site Fonts*/
 }
@@ -20,6 +49,83 @@ html{
 }
 
 body{
-    font-family: sans-serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
 }
+
+.container{
+    max-width: 1260px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+/*Site-header tugadi*/
+
+.site-header{
+    padding-top: 41px;
+}
+
+.site-container{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    margin-right: auto;
+}
+
+.logo-img{
+    display: block;
+}
+
+.navbar__list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin-right: 72px;
+    margin-left: 20px;
+    padding: 0;
+}
+
+.navbar__item{
+    margin-bottom: -10px;
+}
+
+.navbar__item:not(:last-child){
+    margin-right: 73px;
+}
+
+.navbar__link, .apply-link{
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar__link{
+    color: var(--text-color);
+    text-transform: capitalize;
+    white-space: nowrap;
+}
+
+.navbar__link::after {
+    margin-top: 10px;
+    content: "";
+    width: 0;
+    display: block;
+    height: 2px;
+    background-color: #717CFF;
+    transition: width .3s;
+}
+
+.navbar__link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+.apply-link{
+    color: #505050;
+    padding: 11px 35px;
+    border: 2px solid #717cff;
+    border-radius: 11px;
+}
+
+/*Site-header tugadi*/
