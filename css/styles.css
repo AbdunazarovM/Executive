@@ -137,6 +137,8 @@ body{
 
 /*Site-header tugadi*/
 
+/*Hero boshandi*/
+
 .hero{
     padding-top: 140px;
     padding-bottom: 59px;
@@ -195,3 +197,43 @@ body{
 .hero__item:not(:last-child){
     margin-right: 27px;
 }
+
+/*Hero tugadi*/
+
+/*Universities boshlandi*/
+
+.universities{
+    background-color: #fafafa;
+    padding: 57px 0;
+}
+
+.universities__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.universities__title{
+    font-size: 22px;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    color: #373737;
+    margin-top: 0;
+    margin-bottom: 86px;
+}
+
+.universities__list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 100px;
+}
+
+.universities__icon:not(:last-child){
+    margin-right: 74px;
+}
+
+.universities__icon .universities__link img{
+    display: block;
+}
+
