@@ -28,7 +28,8 @@
 
 /*CUSTOM PROPERTIES*/
 :root{
-    --text-color: #373737;
+    --text-color: #7d7d7d;
+    --link-color: #717cff;
 
 
     /*Site Fonts*/
@@ -50,13 +51,19 @@ html{
 
 body{
     font-family: "Roboto", "Arial", sans-serif;
-    font-size: 16px;
+    font-weight: 500;
 }
 
 .container{
     max-width: 1260px;
     padding: 0 30px;
     margin: 0 auto;
+}
+
+.text{
+    color: #7d7d7d;
+    font-size: 22px;
+    line-height: 1.7;
 }
 
 /*Site-header tugadi*/
@@ -101,7 +108,7 @@ body{
 }
 
 .navbar__link{
-    color: var(--text-color);
+    color: #373737;
     text-transform: capitalize;
     white-space: nowrap;
 }
@@ -112,7 +119,7 @@ body{
     width: 0;
     display: block;
     height: 2px;
-    background-color: #717CFF;
+    background-color: var(--link-color);
     transition: width .3s;
 }
 
@@ -129,3 +136,62 @@ body{
 }
 
 /*Site-header tugadi*/
+
+.hero{
+    padding-top: 140px;
+    padding-bottom: 59px;
+    background-image: url("../images/student-woman.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 550px) 80px;
+}
+
+
+.hero__title{
+    max-width: 500px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 56px;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.hero__title span{
+    color: var(--link-color);
+}
+
+.hero__text{
+    max-width: 632px;
+    margin-top: 0;
+    margin-bottom: 42px;
+}
+
+.hero__apply{
+    padding: 12px 23px 12px 34px;
+    background-color: var(--link-color);
+    text-decoration: none;
+    font-size: 22px;
+    line-height: 1.8;
+    color: #fff;
+    border-radius: 11px;
+}
+
+.hero__apply::after{
+    content: "";
+    display: inline-block;
+    margin-left: 34px;
+    width: 18px;
+    height: 16px;
+    background-image: url(../images/arrow-right.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.hero-list{
+    margin-top: 100px;
+    display: flex;
+    list-style-type: none;
+}
+
+.hero__item:not(:last-child){
+    margin-right: 27px;
+}
