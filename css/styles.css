@@ -66,6 +66,10 @@ body{
     line-height: 1.7;
 }
 
+h1,h2,h3,p{
+    margin: 0;
+}
+
 /*Site-header tugadi*/
 
 .site-header{
@@ -150,7 +154,6 @@ body{
 
 .hero__title{
     max-width: 500px;
-    margin-top: 0;
     margin-bottom: 15px;
     font-size: 56px;
     line-height: 1.2;
@@ -163,7 +166,6 @@ body{
 
 .hero__text{
     max-width: 632px;
-    margin-top: 0;
     margin-bottom: 42px;
 }
 
@@ -175,15 +177,17 @@ body{
     line-height: 1.8;
     color: #fff;
     border-radius: 11px;
+    white-space: nowrap;
 }
 
 .hero__apply::after{
     content: "";
     display: inline-block;
     margin-left: 34px;
-    width: 18px;
-    height: 16px;
+    width: 22px;
+    height: 20px;
     background-image: url(../images/arrow-right.svg);
+    background-position: center 2px;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -218,7 +222,6 @@ body{
     letter-spacing: 2.1px;
     text-transform: uppercase;
     color: #373737;
-    margin-top: 0;
     margin-bottom: 86px;
 }
 
@@ -237,3 +240,151 @@ body{
     display: block;
 }
 
+.dots {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.dots-item {
+	display: block;
+	margin-left: 30px;
+    padding: 5px;
+	border-radius: 50%;
+	background-color: grey;
+}
+
+.dots-item:hover {
+	background-color: blue;
+	transform: scale(1.5);
+}
+
+.dots-item-active {
+	padding: 7.5px;
+	background-color: blue;
+	border-radius: 50%;
+}
+
+/*Universities tugadi*/
+
+/*Services boshlandi*/
+
+.services{
+    padding-top: 122px;
+    padding-bottom: 76px;
+}
+
+.services__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.services__title{
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 1.5px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.services__text{
+    width: 950px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 1.7;
+    margin-bottom: 110px;
+}
+
+.services__list{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+}
+
+.services__item{
+    box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+    padding: 29px 17px 34px 31px;
+    margin-bottom: 50px;
+}
+
+.services__item:not(:nth-of-type(3n)){
+    margin-right: 47px;
+}
+
+.title-item{
+    font-size: 24px;
+    margin-bottom: 9px;
+    color: #37474f;
+}
+
+.title-item::before{
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.services__item:nth-of-type(1) .title-item::before{
+    background-image: url("../images/radar.svg");
+    background-color: var(--link-color);
+}
+
+.services__item:nth-of-type(2) .title-item::before{
+    background-image: url("../images/bookmark.svg");
+    background-color:#ff5959;
+}
+
+.services__item:nth-of-type(3) .title-item::before{
+    background-image: url("../images/file-checked.svg");
+    background-color: #70ce88;
+}
+
+.services__item:nth-of-type(4) .title-item::before{
+    background-image: url("../images/home.svg");
+    background-color: #5c96ff;
+}
+
+.services__item:nth-of-type(5) .title-item::before{
+    background-image: url("../images/airplane.svg");
+    background-color: #fa706c;
+}
+
+.text-item{
+    width: 296px;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 26px;
+    letter-spacing: 0.4px;
+    color: rgba(55, 71, 79, 0.7);
+}
+
+.link-item{
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 17px;
+    letter-spacing: 0.4px;
+}
+
+.link-item::after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/arrow-right.svg");
+    background-position: center 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+/*Services tugadi*/
