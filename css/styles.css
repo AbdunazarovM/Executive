@@ -82,6 +82,31 @@ h1,h2,h3,p{
     margin: 0;
 }
 
+.dots {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.dots-item {
+	display: block;
+	margin-left: 30px;
+    padding: 5px;
+	border-radius: 50%;
+	background-color: grey;
+}
+
+.dots-item:hover {
+	background-color: blue;
+	transform: scale(1.5);
+}
+
+.dots-item-active {
+	padding: 7.5px;
+	background-color: blue;
+	border-radius: 50%;
+}
+
 /*Site-header tugadi*/
 
 .site-header{
@@ -250,31 +275,6 @@ h1,h2,h3,p{
 
 .universities__icon .universities__link img{
     display: block;
-}
-
-.dots {
-	display: flex;
-	justify-content: center;
-    align-items: center;
-}
-
-.dots-item {
-	display: block;
-	margin-left: 30px;
-    padding: 5px;
-	border-radius: 50%;
-	background-color: grey;
-}
-
-.dots-item:hover {
-	background-color: blue;
-	transform: scale(1.5);
-}
-
-.dots-item-active {
-	padding: 7.5px;
-	background-color: blue;
-	border-radius: 50%;
 }
 
 /*Universities tugadi*/
@@ -591,3 +591,59 @@ h1,h2,h3,p{
     background-size: contain;
     background-repeat: no-repeat;
 }
+
+/*Upcoming tugadi*/
+
+/*Countries boshlandi*/
+
+.countries{
+    padding-top: 82px;
+    padding-bottom: 138px;
+    background-color: #fafafa;
+}
+
+.countries__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countries__text{
+    margin-bottom: 77px;
+}
+
+.countries__list{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.countries__icon{
+    margin-bottom: 83px;
+}
+
+.countries__icon:not(:last-child){
+    margin-right: 46px;
+}
+
+.countries__icon a img{
+    display: block;
+    margin-bottom: 27px;
+}
+
+.countries__icon-title{
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #37474f;
+    margin-bottom: 11px;
+}
+
+.countries__icon-text{
+    max-width: 348px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: rgba(55, 71, 79, 0.72);
+}
+
+/*Countries tugadi*/
