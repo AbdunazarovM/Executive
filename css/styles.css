@@ -473,3 +473,121 @@ h1,h2,h3,p{
 }
 
 /*News tugadi*/
+
+/*Upcoming boshlandi*/
+
+.upcoming{
+    padding-top: 98px;
+    padding-bottom: 110px;
+}
+
+.upcoming__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upcoming__text{
+    margin-bottom: 100px;
+}
+
+.upcoming__list{
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 83px;
+}
+
+.upcoming__item{
+    padding: 30px;
+    box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+    border-radius: 15px;
+}
+
+.upcoming__item:not(:last-child){
+    margin-right: 47px;
+}
+
+.australia{
+    display: flex;
+    margin-bottom: 28px;
+}
+
+.australia__date{
+    margin-right: 19px;
+    padding: 11px 22px;
+    background-color: rgba(113, 124, 255, 0.14);
+    color: var(--link-color);
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 1.2;
+    border-radius: 11px;
+}
+
+.australia__date span{
+    display: block;
+    color: var(--link-color);
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+.australia__title{
+    width: 351px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.upcoming__item-text{
+    width: 480px;
+    letter-spacing: 0.44px;
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 26px;
+    color: rgba(55, 71, 79, 0.72);
+}
+
+.link-time{
+    display: flex;
+    align-items: flex-end;
+}
+
+.upcoming__item-link{
+    display: flex;
+    align-items: flex-end;
+    margin-right: auto;
+    text-decoration: none;
+    color: var(--link-color);
+    font-size: 17px;
+    letter-spacing: 0.4px;
+}
+
+.upcoming__item-link::after{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/arrow-right.svg");
+    background-position: center 2px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.upcoming__item-time{
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 1.75;
+    letter-spacing: 0.44px;
+    color: #373737;
+}
+
+.upcoming__item-time::before{
+    content: "";
+    width: 24px;
+    height: 24px;
+    background-image: url("../images/time.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
