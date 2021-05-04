@@ -64,6 +64,18 @@ body{
     color: #7d7d7d;
     font-size: 22px;
     line-height: 1.7;
+    width: 950px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.title{
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 1.5px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    margin-bottom: 25px;
 }
 
 h1,h2,h3,p{
@@ -184,10 +196,10 @@ h1,h2,h3,p{
     content: "";
     display: inline-block;
     margin-left: 34px;
-    width: 22px;
-    height: 20px;
+    width: 28px;
+    height: 26px;
     background-image: url(../images/arrow-right.svg);
-    background-position: center 2px;
+    background-position: center 5px;
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -280,20 +292,7 @@ h1,h2,h3,p{
     align-items: center;
 }
 
-.services__title{
-    font-size: 37px;
-    font-weight: 700;
-    line-height: 1.5px;
-    letter-spacing: -0.5px;
-    text-align: center;
-    margin-bottom: 25px;
-}
-
 .services__text{
-    width: 950px;
-    font-size: 22px;
-    text-align: center;
-    line-height: 1.7;
     margin-bottom: 110px;
 }
 
@@ -378,8 +377,8 @@ h1,h2,h3,p{
 
 .link-item::after{
     content: "";
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     background-image: url("../images/arrow-right.svg");
     background-position: center 2px;
     background-size: contain;
@@ -388,3 +387,89 @@ h1,h2,h3,p{
 }
 
 /*Services tugadi*/
+
+/*News boshlabdi*/
+
+.news{
+    padding-top: 102px;
+    padding-bottom: 124px;
+    background-color: #fafafa;
+}
+
+.news__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news__text{
+    margin-bottom: 119px;
+}
+
+.news__list{
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 146px;
+}
+
+.news__item{
+    box-shadow: 0px 6px 42px rgba(0, 0, 0, 0.103884);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.news__item:not(:nth-of-type(3n)){
+    margin-right: 46px;
+}
+
+.item__basket{
+    padding: 28px 27px 62px 26px;
+}
+
+.item__time{
+    display: flex;
+    align-items: center;
+    color: #565656;
+    font-weight: 900;
+    font-style: 16px;
+    margin-bottom: 17px;
+}
+
+.item__time::before{
+    content: "";
+    width: 21px;
+    height: 21px;
+    background-image: url("../images/date.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 12px;
+}
+
+.item__title{
+    max-width: 291px;
+}
+
+.news__link{
+    display: flex;
+    padding: 12px 35px;
+    border-radius: 11px;
+    font-style: 22px;
+    line-height: 1.8;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    background-color: var(--link-color);
+}
+
+.news__link::after{
+    content: "";
+    width: 28px;
+    height: 26px;
+    background-image: url("../images/arrow-right.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 35px;
+}
+
+/*News tugadi*/
