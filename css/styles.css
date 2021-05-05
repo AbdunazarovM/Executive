@@ -849,11 +849,7 @@ h1,h2,h3,p{
     list-style-type: none;
     align-items: flex-end;
     padding: 0;
-    margin: 0;
-}
-
-.social-icon{
-    margin-bottom: 32px;
+    margin: 60px;
 }
 
 .social-icon:not(:last-child){
