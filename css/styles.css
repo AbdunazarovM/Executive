@@ -647,3 +647,91 @@ h1,h2,h3,p{
 }
 
 /*Countries tugadi*/
+
+/*Testimonial boshlandi*/
+
+.testimonial{
+    padding-top: 98px;
+    padding-bottom: 110px;
+}
+
+.testimonial__container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.testimonial__text{
+    margin-bottom: 142px;
+}
+
+.testimonial__list{
+    max-width: 1200px;
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin-left: 100px;
+    background-color: #fff;
+    overflow-x: scroll;
+}
+
+.testimonial__icon{
+    padding: 39px 34px 46px 34px;
+    box-shadow: 0px 0px 77px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    border-radius: 29px;
+}
+
+.testimonial__icon:not(:last-child){
+    margin-right: 65px;
+}
+
+.testimonial__icon-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+
+.testimonial__icon-info::before{
+    content: "";
+    width: 62px;
+    height: 62px;
+    margin-right: 28px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.harrison-phillips::before{
+    background-image: url("../images/harrison-phillips.png");
+}
+
+.ainara-vergara::before{
+    background-image: url("../images/ainara-vergara.png");
+}
+
+.niek-bove::before{
+    background-image: url("../images/niek-bove.png");
+}
+
+.info-title{
+    font-weight: 900;
+    font-size: 22px;
+    line-height: 1.2;
+    color: #37474f;
+}
+
+.info-text{
+    font-size: 18px;
+    line-height: 1.2;
+    color: rgba(55, 71, 79, 0.65);
+}
+
+.testimonial__icon-text{
+    font-size: 18px;
+    line-height: 1.7;
+    color: rgba(55, 71, 79, 0.72);
+    width: 435px;
+}
+
+/*Testimonial tugadi*/
