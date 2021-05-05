@@ -735,3 +735,47 @@ h1,h2,h3,p{
 }
 
 /*Testimonial tugadi*/
+
+/*Appy boshlandi*/
+
+.appy{
+    padding-top: 82px;
+    padding-bottom: 74px;
+    background-color: #fafafa;
+}
+
+.appy__container{
+    min-width: 1140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.appy__title{
+    line-height: 1.6;
+    color: #252525;
+    margin-bottom: 0;
+}
+
+.appy__link{
+    display: flex;
+    padding: 12px 35px;
+    border-radius: 11px;
+    font-style: 22px;
+    line-height: 1.8;
+    text-decoration: none;
+    white-space: nowrap;
+    color: #fff;
+    background-color: var(--link-color);
+}
+
+.appy__link::after{
+    content: "";
+    width: 28px;
+    height: 26px;
+    background-image: url("../images/arrow-right.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 42px;
+}
+
